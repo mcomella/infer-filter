@@ -7,7 +7,8 @@ SERVER = 'https://people.mozilla.org/~sledru/reports/fennec-infer/bugs.txt'
 FILTERS = map(lambda s: re.compile(s), [
     '/mobile/android/tests/',
     '/mobile/android/thirdparty/',
-    '/mobile/android/base/java/org/mozilla/gecko/GeckoSmsManager.java',
+    '/mobile/android/base/java/org/mozilla/gecko/GeckoSmsManager.java',  # to be removed in https://bugzilla.mozilla.org/show_bug.cgi?id=1153560
+    'mobile/android/base/java/org/mozilla/gecko/ContactService.java',  # to be removed in ???
 ])
 
 
