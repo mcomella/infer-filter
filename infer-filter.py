@@ -7,6 +7,7 @@ SERVER = 'https://people.mozilla.org/~sledru/reports/fennec-infer/bugs.txt'
 FILTERS = map(lambda s: re.compile(s), [
     '/mobile/android/tests/',
     '/mobile/android/thirdparty/',
+    '/mobile/android/base/java/org/mozilla/gecko/GeckoSmsManager.java',
 ])
 
 
